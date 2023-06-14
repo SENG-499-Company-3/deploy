@@ -3,6 +3,8 @@ os: linux
 files:
   - source: "backend @ 259bf66"
     destination: /var/ww/backend/
-hooks:
-  BeforeInstall:
-    - location: make
+phases:
+  install:
+    commands:
+      - echo "Install phase"
+      - make
