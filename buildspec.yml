@@ -1,0 +1,8 @@
+version: 0.0
+os: linux
+files:
+  - source: "backend @ 259bf66"
+    destination: /var/ww/backend/
+hooks:
+  BeforeInstall:
+    - location: make
