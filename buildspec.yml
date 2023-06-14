@@ -3,4 +3,14 @@ version: 0.0
 phases:
   install:
     commands:
-      - echo "Buildspec install phase"
+      - echo Buildspec install phase
+  pre_build:
+    commands:
+      - echo Buildspec pre build phase
+  build:
+    commands:
+      - echo Buildspec build phase
+  post_build:
+    commands:
+      - echo Buildspec post build phase
+
