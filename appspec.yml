@@ -1,9 +1,12 @@
 version: 0.1
 
+files:
+  - source: backend
+    destination: /webapps/backend
+
 
 hooks:
-  BeforeInstall:
-    - location: dummyScript.sh
+
   AfterInstall:
-    - location: backend_run.sh
-    timeout: 300
+    - location: dummyScript.sh
+    timeout: 3
