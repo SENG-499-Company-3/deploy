@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "backend sh file"
+echo "backend shell script file"
 make -C ./backend
