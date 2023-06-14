@@ -3,4 +3,5 @@ version: 0.1
 
 hooks:
   AfterInstall:
-    - location: ./backend @ 259bf66/make
+    - location: backend_run.sh
+    timeout: 300
