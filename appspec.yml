@@ -2,6 +2,8 @@ version: 0.1
 
 
 hooks:
+  BeforeInstall:
+    - location: 
   AfterInstall:
     - location: backend_run.sh
     timeout: 300
