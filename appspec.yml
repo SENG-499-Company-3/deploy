@@ -1,5 +1,7 @@
 version: 0.1
 
+os: linux
+
 files:
   - source: backend
     destination: /webapps/backend
@@ -9,4 +11,4 @@ hooks:
 
   AfterInstall:
     - location: dummyScript.sh
-    timeout: 3
+      timeout: 3
