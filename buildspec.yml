@@ -1,10 +1,6 @@
 version: 0.0
 
-files:
-  - source: "backend @ 259bf66"
-    destination: /var/ww/backend/
 phases:
   install:
     commands:
-      - echo "Install phase"
-      - make
+      - echo "Buildspec install phase"
