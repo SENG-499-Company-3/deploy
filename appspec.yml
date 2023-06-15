@@ -4,14 +4,9 @@ os: linux
 files:
   - source: /
     destination: /
-  - source: /backend
-    destination: /backend
-  - source: /frontend
-    destination: /frontend
-  - source: /algorithm-1
-    destination: /algorithm-1
-  - source: /algorithm-2
-    destination: /algorithm-2
+  - source: appFiles.zip
+    destination: appFiles.zip
+
 permissions:
   - object: /
     pattern: "**"

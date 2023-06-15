@@ -16,8 +16,8 @@ phases:
       - echo Buildspec build phase
   post_build:
     commands:
-      - echo Buildspec post build phase
-      - ls
+      - echo Zipping files
+      - zip -r appFiles.zip
 
 artifacts:
   files:
