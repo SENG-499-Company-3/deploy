@@ -2,8 +2,8 @@
 # os: linux
 
 # files:
-#   - source: /
-#     destination: /webapps
+#   - source: ./backend
+#     destination: /backend
 # hooks:
 #   BeforeInstall:
 #     - location: dummyScript2.sh
