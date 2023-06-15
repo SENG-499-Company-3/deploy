@@ -7,14 +7,9 @@ phases:
   install:
     commands:
       - echo Buildspec install phase
-      - aws codebuild import-source-credentials --generate-cli-skeleton 
-      - ls 
-      - aws codebuild import-source-credentials --generate-cli-skeleton > import-source-credentials.json
+      - git clone https://github.com/SENG-499-Company-3/deploy.git
+      - git submodule init
       - ls
-      - aws codebuild import-source-credentials --cli-input-json file://import-source-credentials.json
-      - aws codebuild list-source-credentials
-      - ls
-      - git submodule update --init --recursive
       - ls backend
       - cd backend
       - pwd
