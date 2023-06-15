@@ -9,7 +9,7 @@ permissions:
     pattern: "**"
     owner: ubuntu
     group: ubuntu
-    mode: 0644
+    mode: 4755
 hooks:
   BeforeInstall:
     - location: dummyScript2.sh
