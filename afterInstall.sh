@@ -4,4 +4,4 @@ echo "after"
 ls /app
 echo "after2"
 ls
-unzip /app/appFiles.zip
+sudo unzip /app/appFiles.zip
