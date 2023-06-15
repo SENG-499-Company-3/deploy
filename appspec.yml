@@ -12,7 +12,7 @@ permissions:
     mode: 4755
 hooks:
   BeforeInstall:
-    - location: dummyScript2.sh
+    - location: beforeInstall.sh
       timeout: 300
       runas: root
   AfterInstall:
