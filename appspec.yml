@@ -12,6 +12,9 @@ permissions:
     mode: 4755
 hooks:
   BeforeInstall:
+    - location: dummyScript.sh
+      timeout: 300
+      runas: root
     - location: ./webapp/beforeInstall.sh
       timeout: 300
       runas: root
