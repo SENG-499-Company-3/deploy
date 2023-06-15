@@ -3,9 +3,9 @@ os: linux
 
 files:
   - source: /
-    destination: ./webapp
+    destination: /
 permissions:
-  - object: ./webapp
+  - object: /
     pattern: "**"
     owner: root
     group: root
@@ -15,10 +15,10 @@ hooks:
     - location: dummyScript.sh
       timeout: 300
       runas: root
-    - location: ./webapp/beforeInstall.sh
+    - location: beforeInstall.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: ./webapp/backend_run.sh
+    - location: backend_run.sh
       timeout: 300
       runas: root
