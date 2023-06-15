@@ -8,6 +8,7 @@ hooks:
   BeforeInstall:
     - location: dummyScript2.sh
       timeout: 300
+      runas: root
   AfterInstall:
     - location: dummyScript.sh
       timeout: 30
