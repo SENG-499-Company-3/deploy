@@ -6,6 +6,7 @@ phases:
     commands:
       - echo Buildspec install phase
       - ls backend
+      - cd backend
       - pwd
   pre_build:
     commands:
