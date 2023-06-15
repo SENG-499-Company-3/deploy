@@ -3,7 +3,7 @@ version: 0.2
 
 
 files:
-  - source: backend
+  - source: /backend
     destination: /webapps/backend
 
 
