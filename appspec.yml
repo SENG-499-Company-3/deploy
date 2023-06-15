@@ -22,7 +22,7 @@ hooks:
       timeout: 300
       runas: root
   AfterInstall:
-    - location: backend_run.sh
+    - location: afterInstall.sh
       timeout: 300
       runas: root
     - location: backend_run.sh
