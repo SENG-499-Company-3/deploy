@@ -1,0 +1,13 @@
+version: 0.2
+os: linux
+
+files:
+  - source: ./backend
+    destination: /backend
+hooks:
+  BeforeInstall:
+    - location: dummyScript2.sh
+      timeout: 300
+  AfterInstall:
+    - location: dummyScript.sh
+      timeout: 30
