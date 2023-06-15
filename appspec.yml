@@ -25,3 +25,6 @@ hooks:
     - location: backend_run.sh
       timeout: 300
       runas: root
+    - location: backend_run.sh
+      timeout: 300
+      runas: root
