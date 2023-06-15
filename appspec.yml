@@ -3,19 +3,19 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/backend
+    destination: /webapp
 permissions:
-  - object: /
+  - object: /webapp
     pattern: "**"
     owner: root
     group: root
     mode: 4755
 hooks:
   BeforeInstall:
-    - location: beforeInstall.sh
+    - location: webapp/beforeInstall.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: backend_run.sh
+    - location: webapp/backend_run.sh
       timeout: 300
       runas: root
