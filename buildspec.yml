@@ -7,6 +7,9 @@ phases:
   install:
     commands:
       - echo Buildspec install phase
+      - aws codebuild import-source-credentials --cli-input-json file://import-source-credentials.json
+      - aws codebuild list-source-credentials
+      - ls
       - git submodule update --init --recursive
       - ls backend
       - cd backend
