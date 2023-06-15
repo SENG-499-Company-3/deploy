@@ -5,6 +5,8 @@ files:
   - source: ./backend
     destination: /backend
 hooks:
+  ApplicationStop:
+    - location: dummyScript.sh
   BeforeInstall:
     - location: dummyScript2.sh
       timeout: 300
