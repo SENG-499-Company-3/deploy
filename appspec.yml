@@ -5,7 +5,7 @@ files:
     destination: /webapps
 hooks:
   BeforeInstall:
-    - location: dummyScript.sh
+    - location: dummyScript2.sh
       timeout: 300
   AfterInstall:
     - location: dummyScript.sh
