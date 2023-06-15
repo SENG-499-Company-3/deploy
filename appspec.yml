@@ -16,6 +16,6 @@ hooks:
       timeout: 300
       runas: root
   AfterInstall:
-    - location: dummyScript.sh
+    - location: backend_run.sh
       timeout: 300
       runas: root
