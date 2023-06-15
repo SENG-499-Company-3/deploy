@@ -1,10 +1,11 @@
 version: 0.1
 
+
 phases:
   install:
     commands:
       - echo Buildspec install phase
-      - ls
+      - ls backend
       - pwd
   pre_build:
     commands:
