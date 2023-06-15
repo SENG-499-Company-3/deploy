@@ -18,7 +18,7 @@ phases:
     commands:
       - echo Zipping files
       - ls
-      - zip -r appFiles.zip
+      - zip -r appFiles.zip ./*
 
 artifacts:
   files:
