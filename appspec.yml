@@ -13,9 +13,9 @@ permissions:
 hooks:
   BeforeInstall:
     - location: dummyScript2.sh
-      timeout: 10
+      timeout: 300
       runas: root
   AfterInstall:
     - location: dummyScript.sh
-      timeout: 30
+      timeout: 300
       runas: root
