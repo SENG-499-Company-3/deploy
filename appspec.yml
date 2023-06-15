@@ -13,7 +13,12 @@ permissions:
     owner: root
     group: root
     mode: 4755
+
 hooks:
+  ApplicationStop:
+    - location: backend_stop.sh
+      timeout: 300
+      runas: root
   BeforeInstall:
     - location: installPackages.sh
       timeout: 300
@@ -22,6 +27,6 @@ hooks:
     - location: unzipApp.sh
       timeout: 300
       runas: root
-    - location: backend_run.sh
+    - location: backend_start.sh
       timeout: 300
       runas: root
