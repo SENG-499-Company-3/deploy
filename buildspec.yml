@@ -7,16 +7,13 @@ phases:
   install:
     commands:
       - echo Cloning submodules
-      # - git clone -b dev https://github.com/SENG-499-Company-3/frontend.git
-      # - git clone -b dev https://github.com/SENG-499-Company-3/backend.git
-      # - git clone -b dev https://github.com/SENG-499-Company-3/algorithm-1.git
-      # - git clone -b dev https://github.com/SENG-499-Company-3/algorithm-2.git
+      - git clone -b dev https://github.com/SENG-499-Company-3/frontend.git
+      - git clone -b dev https://github.com/SENG-499-Company-3/backend.git
+      - git clone -b dev https://github.com/SENG-499-Company-3/algorithm-1.git
+      - git clone -b dev https://github.com/SENG-499-Company-3/algorithm-2.git
   pre_build:
     commands:
       - echo Buildspec pre build phase
-      - git submodule update --init --recursive
-      - ls
-      - ls backend
   build:
     commands:
       - echo Buildspec build phase
