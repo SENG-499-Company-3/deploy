@@ -1,5 +1,5 @@
 version: 0.2
-os: ubuntu
+os: linux
 
 files:
   - source: ./backend
@@ -7,9 +7,10 @@ files:
 hooks:
   ApplicationStop:
     - location: dummyScript.sh
+      timeout: 10
   BeforeInstall:
     - location: dummyScript2.sh
-      timeout: 300
+      timeout: 10
       runas: root
   AfterInstall:
     - location: dummyScript.sh
