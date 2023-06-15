@@ -7,8 +7,11 @@ phases:
   install:
     commands:
       - echo Buildspec install phase
-      - git clone https://github.com/SENG-499-Company-3/deploy.git
-      - git submodule init
+      - ls
+      - git clone -b dev https://github.com/SENG-499-Company-3/frontend.git
+      - git clone -b dev https://github.com/SENG-499-Company-3/backend.git
+      - git clone -b dev https://github.com/SENG-499-Company-3/algorithm-1.git
+      - git clone -b dev https://github.com/SENG-499-Company-3/algorithm-2.git
       - ls
       - ls backend
       - cd backend
