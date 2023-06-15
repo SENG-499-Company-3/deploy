@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "Stopping backend before redeployment"
-make clean -C ./backend
+make close -C ./backend
