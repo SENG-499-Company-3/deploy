@@ -5,7 +5,7 @@ files:
   - source: /
     destination: /
   - source: appFiles.zip
-    destination: app/appFiles.zip
+    destination: /app/appFiles.zip
 
 permissions:
   - object: /
