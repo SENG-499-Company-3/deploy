@@ -15,14 +15,11 @@ permissions:
     mode: 4755
 hooks:
   BeforeInstall:
-    - location: dummyScript.sh
-      timeout: 300
-      runas: root
-    - location: beforeInstall.sh
+    - location: installPackages.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: afterInstall.sh
+    - location: unzipApp.sh
       timeout: 300
       runas: root
     - location: backend_run.sh
