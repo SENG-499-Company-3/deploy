@@ -5,6 +5,7 @@ phases:
   install:
     commands:
       - echo Buildspec install phase
+      - git submodule update --init --recursive
       - ls backend
       - cd backend
       - pwd
