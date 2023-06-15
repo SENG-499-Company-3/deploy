@@ -17,7 +17,6 @@ phases:
   post_build:
     commands:
       - echo Zipping files
-      - ls
       - zip -r appFiles.zip ./*
 
 artifacts:
