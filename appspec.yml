@@ -1,12 +1,13 @@
-version: 0.1
+version: 0.2
 os: linux
-files:
-  - source: /
-    destination: /webapps
-hooks:
-  BeforeInstall:
-    - location: dummyScript2.sh
-      timeout: 300
-  AfterInstall:
-    - location: dummyScript.sh
-      timeout: 30
+
+# files:
+#   - source: /
+#     destination: /webapps
+# hooks:
+#   BeforeInstall:
+#     - location: dummyScript2.sh
+#       timeout: 300
+#   AfterInstall:
+#     - location: dummyScript.sh
+#       timeout: 30
