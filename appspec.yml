@@ -14,8 +14,8 @@ hooks:
   BeforeInstall:
     - location: dummyScript2.sh
       timeout: 10
-      runas: ubuntu
+      runas: root
   AfterInstall:
     - location: dummyScript.sh
       timeout: 30
-      runas: ubuntu
+      runas: root
