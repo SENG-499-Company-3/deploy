@@ -1,3 +1,14 @@
-version: 0.1
+version: 0.2
 
 
+
+# files:
+#   - source: backend
+#     destination: /webapps/backend
+
+
+# hooks:
+
+#   AfterInstall:
+#     - location: dummyScript.sh
+#       timeout: 3
