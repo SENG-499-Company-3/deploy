@@ -4,6 +4,8 @@ phases:
   install:
     commands:
       - echo Buildspec install phase
+      - ls
+      - pwd
   pre_build:
     commands:
       - echo Buildspec pre build phase
