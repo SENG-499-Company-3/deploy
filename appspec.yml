@@ -6,7 +6,7 @@ files:
     destination: /opt/app
   # - source: appFiles.zip
   #   destination: /opt/app
-
+file_exists_behavior: OVERWRITE
 permissions:
   - object: .
     pattern: "**"
