@@ -3,8 +3,12 @@ echo "Installing Packages"
 sudo apt-get update
 sudo apt-get -y install make
 sudo apt-get -y install docker-compose
-cd ~/ && git clone https://github.com/nvm-sh/nvm.git .nvm
-#cd ~/.nvm && git checkout v0.39.3
+#Install nvm if not installed
+if [ ! -d "~/.nvm" ]; then
+    cd ~/ && git clone https://github.com/nvm-sh/nvm.git .nvm
+    #cd ~/.nvm && git checkout v0.39.3
+fi
+
 echo "before before"
 sudo ~/nvm.sh
 # export NVM_DIR="$HOME/.nvm"
