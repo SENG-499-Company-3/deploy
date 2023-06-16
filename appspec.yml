@@ -3,9 +3,9 @@ os: linux
 
 files:
   - source: /
-    destination: .
+    destination: /opt/app
   - source: appFiles.zip
-    destination: ./app
+    destination: /opt/app
 
 permissions:
   - object: .
