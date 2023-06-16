@@ -10,11 +10,10 @@ if [ ! -d "~/.nvm" ]; then
     cd ~/.nvm && git checkout v0.39.3
 fi
 
-echo "before before"
-cd ~/.nvm && . ./nvm.sh
+#cd ~/.nvm && . ./nvm.sh
+. ~/.nvm/nvm.sh
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-echo "before"
 cd ~/.nvm && nvm install --lts
 cd ~/.nvm && nvm use --lts 

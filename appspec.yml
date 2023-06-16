@@ -19,6 +19,9 @@ hooks:
     - location: backend_stop.sh
       timeout: 300
       runas: root
+    - location: frontend_stop.sh
+      timeout: 300
+      runas: root
   BeforeInstall:
     - location: installPackages.sh
       timeout: 300
@@ -30,7 +33,10 @@ hooks:
     - location: backend_start.sh
       timeout: 300
       runas: root
-    - location: frontend_start.sh
+    # - location: frontend_start.sh
+    #   timeout: 300
+    #   runas: root
+    - location: alg1_start.sh
       timeout: 300
       runas: root
   ApplicationStart:
