@@ -4,15 +4,14 @@ sudo apt-get update
 sudo apt-get -y install make
 sudo apt-get -y install docker-compose
 #Install nvm if not installed
-if [ ! -f "~/.nvm" ]; then
+if [ ! -f "~/.nvm/nvm.sh" ]; then
     echo "inside if"
-    ls ~/.nvm
     cd ~/ && git clone https://github.com/nvm-sh/nvm.git .nvm
     #cd ~/.nvm && git checkout v0.39.3
 fi
 
 echo "before before"
-sudo ~/nvm.sh
+sudo ~/.nvm/nvm.sh
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
