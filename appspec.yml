@@ -15,7 +15,7 @@ permissions:
     mode: 4755
 
 hooks:
-  ApplicationStop:
+  #ApplicationStop:
     # - location: backend_stop.sh
     #   timeout: 300
     #   runas: root
