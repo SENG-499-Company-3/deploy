@@ -3,13 +3,12 @@ os: linux
 
 files:
   - source: /
-    destination: /
+    destination: .
   - source: appFiles.zip
-    destination: /app
-file_exists_behavior: OVERWRITE
+    destination: ./app
 
 permissions:
-  - object: /
+  - object: .
     pattern: "**"
     owner: root
     group: root
