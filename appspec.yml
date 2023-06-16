@@ -33,9 +33,9 @@ hooks:
     - location: backend_start.sh
       timeout: 300
       runas: root
-    # - location: frontend_start.sh
-    #   timeout: 300
-    #   runas: root
+    - location: frontend_start.sh
+      timeout: 300
+      runas: root
     - location: alg1_start.sh
       timeout: 300
       runas: root

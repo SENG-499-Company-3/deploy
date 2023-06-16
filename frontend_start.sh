@@ -1,4 +1,6 @@
 #!/bin/bash
 echo "Starting frontend"
 . ~/.nvm/nvm.sh
-cd ./frontend && npm install && npm run dev > tmpFE.txt &
+cd ./frontend && npm install 
+npm run build
+npm run start > tmpFE.txt &
