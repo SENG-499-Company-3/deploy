@@ -15,13 +15,13 @@ permissions:
     mode: 4755
 
 hooks:
-  #ApplicationStop:
-    # - location: backend_stop.sh
-    #   timeout: 300
-    #   runas: root
-    # - location: frontend_stop.sh
-    #   timeout: 300
-    #   runas: root
+  ApplicationStop:
+    - location: backend_stop.sh
+      timeout: 300
+      runas: root
+    - location: frontend_stop.sh
+      timeout: 300
+      runas: root
   BeforeInstall:
     - location: installPackages.sh
       timeout: 300
