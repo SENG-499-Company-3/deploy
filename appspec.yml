@@ -16,10 +16,10 @@ permissions:
 
 hooks:
   ApplicationStop:
-    - location: backend_stop.sh
+    - location: frontend_stop.sh
       timeout: 300
       runas: root
-    - location: frontend_stop.sh
+    - location: backend_stop.sh
       timeout: 300
       runas: root
   BeforeInstall:
