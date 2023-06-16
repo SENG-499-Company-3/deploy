@@ -3,4 +3,4 @@ echo "Starting frontend"
 . ~/.nvm/nvm.sh
 cd ./frontend && npm install 
 npm run build
-npm run start > tmpFE.txt &
+npm run dev > tmpFE.txt &
