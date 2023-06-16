@@ -4,12 +4,11 @@ sudo apt-get update
 sudo apt-get -y install make
 sudo apt-get -y install docker-compose
 #Install nvm if not installed
-# [ ! -L "~/.nvm" ] && echo "it's true"
-# if [ ! -L "~/.nvm" ]; then
-#     echo "inside if"
-#     cd ~/ && git clone https://github.com/nvm-sh/nvm.git .nvm
-#     #cd ~/.nvm && git checkout v0.39.3
-# fi
+if [ ! -d "~/.nvm" ]; then
+    echo "inside if"
+    cd ~/ && git clone https://github.com/nvm-sh/nvm.git .nvm
+    cd ~/.nvm && git checkout v0.39.3
+fi
 
 echo "before before"
 cd ~/.nvm && . ./nvm.sh
