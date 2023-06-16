@@ -19,9 +19,9 @@ hooks:
     # - location: backend_stop.sh
     #   timeout: 300
     #   runas: root
-    - location: frontend_stop.sh
-      timeout: 300
-      runas: root
+    # - location: frontend_stop.sh
+    #   timeout: 300
+    #   runas: root
   BeforeInstall:
     - location: installPackages.sh
       timeout: 300
