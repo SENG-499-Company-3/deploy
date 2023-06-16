@@ -5,4 +5,4 @@ cd ./frontend
 npm install 
 npm run build
 #npm run dev > tmpFE.txt &
-nohup npm run start > tmpFE.txt &
+npm run --silent start > tmpFE.txt &

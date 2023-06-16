@@ -17,10 +17,10 @@ permissions:
 hooks:
   ApplicationStop:
     - location: backend_stop.sh
-      timeout: 300
+      timeout: 60
       runas: root
     - location: frontend_stop.sh
-      timeout: 300
+      timeout: 60
       runas: root
   BeforeInstall:
     - location: installPackages.sh
@@ -28,8 +28,9 @@ hooks:
       runas: root
   AfterInstall:
     - location: unzipApp.sh
-      timeout: 300
+      timeout: 60
       runas: root
+  ApplicationStart:
     - location: backend_start.sh
       timeout: 300
       runas: root
@@ -42,6 +43,4 @@ hooks:
     # - location: alg2_start.sh
     #   timeout: 300
     #   runas: root
-  ApplicationStart:
-
   #ValidateService:
