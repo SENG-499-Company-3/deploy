@@ -40,7 +40,7 @@ hooks:
     # - location: alg1_start.sh
     #   timeout: 300
     #   runas: root
-    # - location: alg2_start.sh
-    #   timeout: 300
-    #   runas: root
+    - location: alg2_start.sh
+      timeout: 300
+      runas: root
   #ValidateService:
