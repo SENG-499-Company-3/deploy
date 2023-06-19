@@ -22,6 +22,9 @@ hooks:
     - location: frontend_stop.sh
       timeout: 60
       runas: root
+    - location: alg2_stop.sh
+      timeout: 60
+      runas: root
   BeforeInstall:
     - location: installPackages.sh
       timeout: 300
