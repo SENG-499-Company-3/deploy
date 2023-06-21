@@ -9,4 +9,4 @@
 	url = git@github.com:SENG-499-Company-3/algorithm-2.git
 [submodule "algorithm-1"]
 	path = algorithm-1
-	url = git@github.com:SENG-499-Company-3/algorithm-1.git
+	url = https://github.com/SENG-499-Company-3/algorithm-1.git
