@@ -22,7 +22,7 @@ hooks:
     - location: frontend_stop.sh
       timeout: 60
       runas: root
-    - location: alg2_stop.sh
+    - location: alg_stop.sh
       timeout: 60
       runas: root
   BeforeInstall:
@@ -40,9 +40,9 @@ hooks:
     - location: frontend_start.sh
       timeout: 300
       runas: root
-    # - location: alg1_start.sh
-    #   timeout: 300
-    #   runas: root
+    - location: alg1_start.sh
+      timeout: 300
+      runas: root
     - location: alg2_start.sh
       timeout: 300
       runas: root
