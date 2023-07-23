@@ -2,11 +2,8 @@
 echo "Starting frontend"
 ls 
 . ~/.nvm/nvm.sh
-echo "after nvm"
-ls
 cd ./frontend
-echo "after cd"
-ls
+git pull
 npm install 
 npm run build
 #npm run dev > tmpFE.txt &
