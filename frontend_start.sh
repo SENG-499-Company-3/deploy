@@ -2,10 +2,6 @@
 echo "Starting frontend"
 . ~/.nvm/nvm.sh
 cd ./frontend
-git branch
-git status
-ls ./src/components/navigation
-pwd
 npm install 
 npm run build
 #npm run dev > tmpFE.txt &
