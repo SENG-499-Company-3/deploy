@@ -1,12 +1,12 @@
 [submodule "frontend"]
 	path = frontend
 	url = git@github.com:SENG-499-Company-3/frontend.git
-[submodule "backend"]
-	path = backend
-	url = git@github.com:SENG-499-Company-3/backend.git
 [submodule "algorithm-2"]
 	path = algorithm-2
 	url = git@github.com:SENG-499-Company-3/algorithm-2.git
 [submodule "algorithm-1"]
 	path = algorithm-1
 	url = https://github.com/SENG-499-Company-3/algorithm-1.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/SENG-499-Company-3/backend.git
